@@ -25,6 +25,7 @@ const responsive = {
       items: 1
     }
   };
+  const PF = "http://localhost:5000/images/";
 
 export default function videos() {
   return (
@@ -38,27 +39,26 @@ export default function videos() {
     <Container>
       <h4 className="text-secondary">Orthodox</h4>
       <Carousel responsive={responsive} centerMode={true} swipeable={true} draggable={true} infinite={true} keyBoardControl={true} renderDotsOutside={true}>
-        <Video src="https://www.youtube.com/embed/w-KF26jebQI" />
-        <Video src="https://www.youtube.com/embed/w-KF26jebQI" />
-        <Video src="https://www.youtube.com/embed/M6eKSuFYWF4" />
-        <Video src="https://www.youtube.com/embed/VmN1p2HZBK8" />
-        <Video src="https://www.youtube.com/embed/BBGfku6G5Fw" />
+        <Video src="https://www.youtube.com/embed/w-KF26jebQI" url={PF+`ortho1.png`} />
+        <Video src="https://www.youtube.com/embed/M6eKSuFYWF4" url={PF+`ortho2.png`}  />
+        <Video src="https://www.youtube.com/embed/VmN1p2HZBK8" url={PF+`ortho3.png`}  />
+        <Video src="https://www.youtube.com/embed/BBGfku6G5Fw" url={PF+`ortho4.png`}  />
       </Carousel>
       <hr />
       <h4 className="text-secondary">Islam</h4>
       <Carousel responsive={responsive} centerMode={true} swipeable={true} draggable={true} infinite={true} keyBoardControl={true} renderDotsOutside={true}>
-        <Video src="https://www.youtube.com/embed/O5I9l2ZHFvU" />
-        <Video src="https://www.youtube.com/embed/IIReNZuPM6M" />
-        <Video src="https://www.youtube.com/embed/GDn2SSpEL-Y" />
-        <Video src="https://www.youtube.com/embed/uj8pK7VfBto" />
+        <Video src="https://www.youtube.com/embed/O5I9l2ZHFvU" url={PF+`islam1.png`}  />
+        <Video src="https://www.youtube.com/embed/IIReNZuPM6M" url={PF+`islam2.png`}  />
+        <Video src="https://www.youtube.com/embed/GDn2SSpEL-Y" url={PF+`islam3.png`}  />
+        <Video src="https://www.youtube.com/embed/uj8pK7VfBto" url={PF+`islam4.png`}  />
       </Carousel>
       <hr />
       <h4 className="text-secondary">Adventist</h4>
       <Carousel responsive={responsive} centerMode={true} swipeable={true} draggable={true} infinite={true} keyBoardControl={true} renderDotsOutside={true}>
-        <Video src="https://www.youtube.com/embed/3N6PkhmIQ-o" />
-        <Video src="https://www.youtube.com/embed/Y-2LaCPST9o" />
-        <Video src="https://www.youtube.com/embed/Y4pto3M2750" />
-        <Video src="https://www.youtube.com/embed/Y4pto3M2750" />
+        <Video src="https://www.youtube.com/embed/3N6PkhmIQ-o" url={PF+`ad1.png`}  />
+        <Video src="https://www.youtube.com/embed/Y-2LaCPST9o" url={PF+`ortho1.png`}  />
+        <Video src="https://www.youtube.com/embed/Y4pto3M2750" url={PF+`islam1.png`}  />
+        <Video src="https://www.youtube.com/embed/Y4pto3M2750" url={PF+`ortho2.png`}  />
       </Carousel>
     </Container>
     </>
