@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 import TextTruncate from 'react-text-truncate';
 import './post.css';
-import { Link } from "react-router-dom";
 
 
 export default function Post({ post }) {
