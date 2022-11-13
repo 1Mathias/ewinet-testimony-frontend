@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from "axios";
 import Footer from '../../components/footer/footer';
+import HorizontalScrollBar from '../../components/horizontalScroll/horizontallscroll';
 
 
 
@@ -30,7 +31,9 @@ export default function Home() {
             <div className='home'>
                 <Posts posts={posts} />
                 <SideBar />
+                
             </div>
+            {/* <HorizontalScrollBar /> */}
             <Footer />
         </>
     )

@@ -27,13 +27,21 @@ export default function Register() {
         }
          
        }
-       
-       register();
-       setUserdata({
+
+
+       if(userdata.email === "" || userdata.email === ""|| userdata.password=== "")
+       {
+         setFeedback("please fill the fields!");
+       }else{
+        register();
+         setUserdata({
             username:"",
             email:"",
             password:""
        })
+       }
+       
+      
     }
 
     return (
