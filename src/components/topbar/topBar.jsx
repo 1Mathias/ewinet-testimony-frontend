@@ -73,9 +73,7 @@ export default function TopBar() {
               <Nav.Link><Link className="link" to="/write">
                 Write
               </Link></Nav.Link>
-              <Nav.Link><Link className="link" onClick={handleLogout}>
-                {user && "LOGOUT"}
-              </Link></Nav.Link>
+
               <Nav.Link ><Link className="link" to="/contactus">Contact Us</Link></Nav.Link>
               <Nav.Link href="#action12" className="login-btn">
                 <Link className="link" to="/login">
@@ -88,6 +86,34 @@ export default function TopBar() {
                 </Link>
               </li>
               </Nav.Link>
+              <div className="topRightab">
+                {user ? (
+
+
+
+                  <NavDropdown title={<div className='dropdownprofile'><img className="topImg" src={PF + user.profilePic} alt="" /></div>}>
+                    <NavDropdown.Item><Link to="/settings">Profile</Link></NavDropdown.Item>
+
+                    <NavDropdown.Item onClick={handleLogout}>Log Out</NavDropdown.Item>
+
+                  </NavDropdown>
+
+                ) : (
+                  <ul className="topList">
+                    <li className="topListItem">
+                      <Link className="link" to="/login">
+                        LOGIN
+                      </Link>
+                    </li>
+                    <li className="topListItem">
+                      <Link className="link" to="/register">
+                        REGISTER
+                      </Link>
+                    </li>
+                  </ul>
+                )}
+
+              </div>
 
               <Nav.Link>
                 <div class='search-box'>

@@ -148,5 +148,8 @@
 
   .topbar {
     font-weight:500px;
-    height: 75px;
+    height: 75px;   
+  }
+  .dropdownprofile{
+      align-items: center;
   }
