@@ -12,23 +12,23 @@ export default function Regligion() {
             <div className='header'>
       <Carousel autoPlay infiniteLoop showThumbs={false} showIndicators={false} showArrows={false} showStatus={false}>
         <div>
-          <img className="headerImg" src="https://cdn.pixabay.com/photo/2018/09/28/21/10/st-isaacs-cathedral-3710243_960_720.jpg" alt="logo" />
+          <img className="headerImg" src="https://cdn.pixabay.com/photo/2015/07/29/22/56/taj-mahal-866692_960_720.jpg" alt="logo" />
         </div>
         <div>
-          <img className="headerImg" src="https://cdn.pixabay.com/photo/2018/09/28/21/10/saint-isaacs-cathedral-3710237_960_720.jpg" alt="logo" />
+          <img className="headerImg" src="https://cdn.pixabay.com/photo/2016/03/27/18/31/book-1283468_960_720.jpg" alt="logo" />
         </div>
         <div>
-          <img className="headerImg" src="https://cdn.pixabay.com/photo/2013/06/22/03/49/diveevo-140542_960_720.jpg" alt="logo" />
+          <img className="headerImg" src="https://cdn.pixabay.com/photo/2019/07/30/08/44/mosque-4372296_960_720.jpg" alt="logo" />
         </div>
       </Carousel>
     </div>
-         
-    <Typography variant="h2" justifyContent='center' textAlign='center' >Orhodox Faith</Typography>
+        
+    <Typography variant="h2" justifyContent='center' textAlign='center' >Islamic Faith</Typography>
     <Container maxWidth="xl" sx={{marginTop:'20px', marginBottom:'50px'}}>
       <Grid container spacing={5}>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-            <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2016/08/14/11/44/maria-1592567_960_720.jpg' style={{padding:'5px',paddingRight:'5px'}} />
+            <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2019/11/05/20/36/travel-4604499_960_720.jpg' style={{padding:'5px',paddingRight:'5px'}} />
             <CardContent>
               
               <Typography variant="h6" fontWeight={800}>የድንግል መውለድ</Typography>
@@ -49,13 +49,13 @@ export default function Regligion() {
 
 
             <CardActions>
-                <Stack direction='row'  ><Button variant="contained" >See More</Button></Stack>
+                <Stack direction='row'  ><Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button></Stack>
             </CardActions>
           </Card>
         </Grid>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2017/09/04/09/38/crosses-2713356_960_720.jpg' />
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/08/31/07/30/istanbul-915076_960_720.jpg' />
             <CardContent>
               <Typography variant="h6" fontWeight={800}>ከሞት በኃላ</Typography>
               <Typography
@@ -73,7 +73,7 @@ export default function Regligion() {
  
 
             <CardActions>
-                <Button variant="contained">See More</Button>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -81,7 +81,7 @@ export default function Regligion() {
           <Card elevation={6} sx={{ border: 0.5 }}>
            
             <CardContent>
-              <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/08/21/00/12/jesus-christ-898330_960_720.jpg' />
+              <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2019/05/11/17/31/lamps-4196132_960_720.jpg' />
               <Typography variant="h6" fontWeight={800}>የክርስቲያን ጥምቀት</Typography>
               <Typography
                 variant="body1"
@@ -98,13 +98,13 @@ export default function Regligion() {
              
 
             <CardActions>
-                <Button variant="contained">See More</Button>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2017/03/02/05/14/bible-2110439_960_720.jpg' />
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2019/10/03/09/38/spain-4522800_960_720.jpg' />
             <CardContent>
               <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
               <Typography
@@ -122,13 +122,13 @@ export default function Regligion() {
              
 
             <CardActions>
-                <Button variant="contained">See More</Button>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2016/09/08/20/22/angel-1655378_960_720.jpg' />
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2021/01/30/12/31/sultan-qaboos-grand-mosque-5963726_960_720.jpg' />
             <CardContent>
               <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
               <Typography
@@ -146,13 +146,37 @@ export default function Regligion() {
              
 
             <CardActions>
-                <Button variant="contained">See More</Button>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/03/13/08/45/crosses-671379_960_720.jpg' />
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2019/11/05/20/36/travel-4604499_960_720.jpg' />
+            <CardContent>
+              <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
+              <Typography
+                variant="body1"
+               
+                sx={{
+                  height: 50,
+                  overflow: "hidden",
+                }}
+              >
+                ብዙ ክርስቲያኖች አሥራትን በመስጠት ጉዳይ ይታገላሉ፡፡ በአንዳንድ አቢያተ-ክርስቲያናት አሥራትን የመስጠት ጉዳይ ከልክ በላይ ጎልቷል፡፡
+              </Typography>
+            </CardContent>
+            
+             
+ 
+            <CardActions>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
+          <Card elevation={6} sx={{ border: 0.5 }}>
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/08/31/07/30/istanbul-915076_960_720.jpg' />
             <CardContent>
               <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
               <Typography
@@ -170,31 +194,7 @@ export default function Regligion() {
              
 
             <CardActions>
-                <Button variant="contained">See More</Button>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
-          <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2014/10/22/18/16/church-498525_960_720.jpg' />
-            <CardContent>
-              <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
-              <Typography
-                variant="body1"
-               
-                sx={{
-                  height: 50,
-                  overflow: "hidden",
-                }}
-              >
-                ብዙ ክርስቲያኖች አሥራትን በመስጠት ጉዳይ ይታገላሉ፡፡ በአንዳንድ አቢያተ-ክርስቲያናት አሥራትን የመስጠት ጉዳይ ከልክ በላይ ጎልቷል፡፡
-              </Typography>
-            </CardContent>
-            
-             
-
-            <CardActions>
-                <Button variant="contained">See More</Button>
+                <Button variant="contained" sx={{backgroundColor:'#31d2f2'}}>See More</Button>
             </CardActions>
           </Card>
         </Grid>
@@ -224,7 +224,7 @@ export default function Regligion() {
         </Grid>
         <Grid item sm={12} md={6} lg={3} xs={12} className="grow">
           <Card elevation={6} sx={{ border: 0.5 }}>
-           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/08/21/00/12/jesus-christ-898330_960_720.jpg' />
+           <CardMedia component="img" height='250' image='https://cdn.pixabay.com/photo/2015/08/31/07/30/istanbul-915076_960_720.jpg' />
             <CardContent>
               <Typography variant="h6" fontWeight={800}>መጽሐፍ ቅዱስ</Typography>
               <Typography

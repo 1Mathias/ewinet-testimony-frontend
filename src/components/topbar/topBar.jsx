@@ -43,10 +43,10 @@ export default function TopBar() {
                 </Link>
               </Nav.Link>
               <NavDropdown title="Religion" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Orthodox</NavDropdown.Item>
+                <NavDropdown.Item href="/religion">Orthodox</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action4">
-                  Islam
+                <NavDropdown.Item href="/islam">
+                    Islam
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
