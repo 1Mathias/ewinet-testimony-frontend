@@ -12,10 +12,30 @@
 .writeForm{
     position: relative;
 }
+.writeInputcat{
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+  font-family: inherit;
+}
+.writecategory{
+    font-size: 10px;
+    border: beige;
+    padding: 20px;
+    font-family: inherit;
+    width: 70vw;
+}
+.writeFormGroupcat{
+  margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
 .writeFormGroup{
     margin-left: 150px;
     display: flex;
     align-items: center;
+
 }
 .writeIcon{
     width: 25px;
@@ -30,10 +50,12 @@
     cursor: pointer;
 }
 .writeInput{
-    font-size: 30px;
+    font-size: 20px;
     border: none;
     padding: 20px;
     width: 70vw;
+    font-family: inherit;
+    border-bottom: 1px solid lightgray;
 }
 .writeInput::placeholder {
     color: rgb(189, 185, 185);
@@ -49,6 +71,7 @@
     height: 100vh;
     font-family: inherit;
     font-size: 20px;
+    border-bottom: 1px solid gray;
   }
 
   .writeSubmit {

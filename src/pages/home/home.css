@@ -1,5 +1,65 @@
+:root {
+    --deepblue: #000851;
+    --lightblue: #1cb5e0;
+    --gradient: linear-gradient(90deg, var(--deepblue), var(--lightblue));
+    /*background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);*/
+    /*--gradient: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);*/
+}
 .home{
     display: flex;   
     margin:0;
     padding-top: 30px;
+
+}
+.about .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .column .image {
+    flex: 0 0 25rem;
+    justify-content: center;
+}
+
+.about .column .image img {
+    width: 100%;
+    margin:10px;
+}
+
+.about .column .content {
+    flex: 1 1 0;
+    margin-left: 40px;
+}
+
+.about .column .content h3 {
+    font-size: 3rem;
+    color: #666;
+}
+
+.about .column .content p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.about .column .content .buttons a:last-child {
+    margin-left: 2rem;
+}
+h1.heading{
+    margin-left:50px;
+}
+
+a.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    border-radius: 3rem;
+    background: var(--gradient);
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    transition: all 0.3s linear;
 }

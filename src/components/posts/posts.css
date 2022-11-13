@@ -1,8 +1,10 @@
-.posts {
+
+.posts{
+    
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 30px;
     margin-left: 80px;
     text-transform: capitalize
