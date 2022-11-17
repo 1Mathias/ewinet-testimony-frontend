@@ -29,11 +29,11 @@
     display: block;
     width: 10%;
     padding-top: 10px;
-    border-bottom: 3px solid #ec1c24;
+    border-bottom: 3px solid blue;
   }
   
   .highlight-text {
-    color: #ec1c24;
+    color: blue;
   }
   
   .hightlight-contact-info {
@@ -68,7 +68,7 @@
   
   .form-input:focus,
   textarea:focus{
-    outline: 1.5px solid #ec1c24;
+    outline: 1.5px solid blue;
   }
   
   .form-input,
@@ -122,20 +122,20 @@
   
   button, .submit-btn {
     background: transparent;
-    border: 1px solid #ec1c24;
-    color: #ec1c24;
+    border: 1px solid blue;
+    color: blue;
     border-radius: 15px;
     padding: 5px 20px;
     text-transform: uppercase;
   }
   button:hover, .submit-btn:hover,
   button:focus , .submit-btn:focus{
-    background: #ec1c24;
+    background: blue;
     outline: 0;
     color: #eee;
   }
   .error {
-    color: #ec1c24;
+    color: blue;
   }
   
   
