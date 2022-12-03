@@ -30,10 +30,17 @@ export default function Write() {
             const filename = Date.now() + file.name;
             data.append("name", filename);
             data.append("file", file);
-            newPost.photo = filename;
+            data.append("upload_preset", "upload");
             try {
-                await axios.post("/upload", data);
-            } catch (err) { }
+                const uploadRes = await axios.post("https://api.cloudinary.com/v1_1/ramjet-it-solution/image/upload", data);
+                const { url } = uploadRes.data;
+                newPost.photo = url;
+
+                console.log(newPost.photo)
+
+            } catch (error) {
+                console.log(error)
+            }
         }
         try {
             const res = await axios.post("/posts", newPost);
