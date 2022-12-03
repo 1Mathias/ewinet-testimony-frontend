@@ -11,7 +11,7 @@ export default function Post({ post }) {
     return (
         <Card className="post-panel">
             {post && post.photo &&
-                <Card.Img variant="top" src={PF + post.photo} alt='' />
+                <Card.Img className='postimage' variant="top" src={post.photo || 'https://res.cloudinary.com/ramjet-it-solution/image/upload/v1657281849/cld-sample-4.jpg'} alt='' />
             }
             <Card.Body>
                 <Link to={`/post/${post._id}`} className="link">

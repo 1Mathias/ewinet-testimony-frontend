@@ -1,5 +1,6 @@
 .posts-panel{
     margin-top: 10px;
+    
 }
 .post-panel {
     width: 20rem;
@@ -13,6 +14,11 @@
     font-size: 14px;
     font-weight: 300;
     font-style: italic;
+}
+.postimage{
+    height: 250px;
+
+    object-fit: cover;
 }
 .border {
     position: relative;
