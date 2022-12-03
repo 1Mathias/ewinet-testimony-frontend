@@ -3,6 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './singlePost.css';
 import { Context } from "../../context/Context";
+import api from '../../config/api';
 
 
 export default function SinglePost() {
@@ -21,7 +22,7 @@ export default function SinglePost() {
 
     useEffect(() => {
         const getPost = async () => {
-            const res = await axios.get("/posts/" + path);
+            const res = await api.get("/posts/" + path);
             setPost(res.data);
         }
         getPost();
@@ -53,7 +54,7 @@ export default function SinglePost() {
         <div className="singlePost">
             <div className="singlePostWrapper">
                 {post.photo && (
-                    <img src={PF + post.photo} alt="" className="singlePostImg" />
+                    <img src={post.photo || "https://res.cloudinary.com/ramjet-it-solution/image/upload/v1657281849/cld-sample-4.jpg"} alt="" className="singlePostImg" />
                 )}
                 {updateMode ? (
                     <input
