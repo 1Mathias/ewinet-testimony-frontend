@@ -56,6 +56,17 @@
     border-radius: 50%;
     object-fit: cover;
 }
+.justify-content-end.flex-grow-1.pe-3.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.dropdown-toggle.nav-link{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
 .topIcon{
     font-size: 20px;

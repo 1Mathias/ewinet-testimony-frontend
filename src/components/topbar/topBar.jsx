@@ -92,7 +92,7 @@ export default function TopBar() {
 
 
 
-                    <NavDropdown title={<div className='dropdownprofile'><img className="topImg" src={PF + user.profilePic} alt="" /></div>}>
+                    <NavDropdown title={<div className='dropdownprofile'><img className="topImg" src={user.profilePic} alt="" /></div>}>
                       <NavDropdown.Item><Link to="/settings">Profile</Link></NavDropdown.Item>
 
                       <NavDropdown.Item onClick={handleLogout}>Log Out</NavDropdown.Item>
