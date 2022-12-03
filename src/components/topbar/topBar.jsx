@@ -22,7 +22,7 @@ export default function TopBar() {
     <div className='HeaderAdded'>
       <Navbar bg="light" expand='md' className="topbar">
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
             <img className="header_icon" src={image} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
@@ -50,19 +50,19 @@ export default function TopBar() {
                     Islam
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
+                  <NavDropdown.Item href="#">
                     Catholic
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action6">
+                  <NavDropdown.Item href="#">
                     Jehovah
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action7">
+                  <NavDropdown.Item href="#">
                     Only-Jesus
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action8">
+                  <NavDropdown.Item href="#">
                     Adventist
                   </NavDropdown.Item>
                 </NavDropdown>

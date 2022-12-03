@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import image from '../../image/logo.png';
 import './sideBar.css';
+import _ from "lodash";
+import api from '../../config/api';
+
 
 
 export default function SideBar() {
@@ -10,7 +13,8 @@ export default function SideBar() {
 
     useEffect(() => {
         const getCats = async () => {
-            const res = await axios.get("/categories");
+            const res = await api.get("/categories");
+
             setCats(res.data);
         };
         getCats();
@@ -29,11 +33,11 @@ export default function SideBar() {
                 <span className='sidebarTitle'>CATEGORIES</span>
                 <ul className="sidebarList">
 
-                    {cats.map((c) => (
-                        // <Link to={`/?cat=${c.name}`} className="link">
-                        <li className="sidebarListItem">{c.name}</li>
-                        //  
-                    ))}
+                    {cats && cats.map((c) =>
+                        <Link to={`/?cat=${c.name}`} className="link" >
+                            <li className="sidebarListItem">{c.name}</li>
+                        </Link>
+                    )}
                 </ul>
             </div>
             <div className='sidebarItem'>
