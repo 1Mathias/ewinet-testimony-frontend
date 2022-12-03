@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useContext, useState } from 'react'
 import SideBar from '../../components/sidebar/sideBar'
 import { Context } from '../../context/Context';
+import { errorNotification, successNotification } from '../../utils/notifications';
 import './setting.css'
 export default function Setting() {
     const [file, setFile] = useState(null);
@@ -27,17 +28,24 @@ export default function Setting() {
             const filename = Date.now() + file.name;
             data.append("name", filename);
             data.append("file", file);
-            updatedUser.profilePic = filename;
+            data.append("upload_preset", "upload");
             try {
-                await axios.post("/upload", data);
-            } catch (err) { }
+                const profileUpload = await axios.post("https://api.cloudinary.com/v1_1/ramjet-it-solution/image/upload", data);
+                const { url } = profileUpload.data;
+                updatedUser.profilePic = url;
+                console.log(updatedUser.profilePic)
+            } catch (error) {
+                console.log(error)
+            }
         }
         try {
             const res = await axios.put("/users/" + user._id, updatedUser);
             setSuccess(true);
             dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
+            successNotification("Successfully Updated")
         } catch (err) {
             dispatch({ type: "UPDATE_FAILURE" });
+            errorNotification("Unable to update")
         }
     };
 
@@ -52,7 +60,7 @@ export default function Setting() {
                     <label>Profile Picture</label>
                     <div className="settingsPP">
                         <img
-                            src={file ? URL.createObjectURL(file) : PF + user.profilePic}
+                            src={file ? URL.createObjectURL(file) : user.profilePic}
                             alt=""
                         />
                         <label htmlFor="fileInput">
