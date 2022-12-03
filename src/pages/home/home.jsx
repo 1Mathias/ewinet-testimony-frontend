@@ -9,6 +9,8 @@ import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
 import Posts from '../../components/posts/posts';
 import SideBar from '../../components/sidebar/sideBar';
+import api from "../../config/api";
+import getrequest from "../../config/api";
 import './home.css';
 
 
@@ -20,7 +22,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const res = await axios.get("/posts" + search);
+            const res = await api.get("/posts" + search);
 
             setPosts(res.data);
         }

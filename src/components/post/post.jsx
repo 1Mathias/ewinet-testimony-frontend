@@ -10,7 +10,7 @@ export default function Post({ post }) {
     const PF = "http://localhost:5000/images/";
     return (
         <Card className="post-panel">
-            {post.photo &&
+            {post && post.photo &&
                 <Card.Img variant="top" src={PF + post.photo} alt='' />
             }
             <Card.Body>
