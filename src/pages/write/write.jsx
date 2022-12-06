@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './write.css';
 import { Context } from "../../context/Context";
 import axios from 'axios';
+import api from '../../config/api';
 
 
 export default function Write() {
@@ -19,10 +20,10 @@ export default function Write() {
         e.preventDefault();
         const newPost = {
             username: user.username,
-            title: title,
-            desc: desc,
-            categories: categories,
-            hashtags: hashtags
+            title,
+            desc,
+            categories,
+            hashtags
 
         };
         if (file) {
@@ -43,7 +44,7 @@ export default function Write() {
             }
         }
         try {
-            const res = await axios.post("/posts", newPost);
+            const res = await api.post("/posts", newPost);
             window.location.replace("/post/" + res.data._id);
         } catch (err) { }
     }
