@@ -19,10 +19,10 @@ export default function Write() {
         e.preventDefault();
         const newPost = {
             username: user.username,
-            title,
-            desc,
-            categories,
-            hashtags
+            title: title,
+            desc: desc,
+            categories: categories,
+            hashtags: hashtags
 
         };
         if (file) {
@@ -78,7 +78,7 @@ export default function Write() {
                     <input
                         type="text"
                         placeholder="category"
-                        className="writeInput  "
+                        className="writeInput "
                         autoFocus={true}
                         onChange={e => setCategories(e.target.value)}
                     />
@@ -87,7 +87,7 @@ export default function Write() {
                     <input
                         type="text"
                         placeholder="hashtags"
-                        className="writeInput  "
+                        className="writeInput "
                         autoFocus={true}
                         onChange={e => setHashTags(e.target.value)}
                     />

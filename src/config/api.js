@@ -4,7 +4,7 @@ import { errorNotification } from "../utils/notifications";
 
 const REACT_APP_API = "http://localhost:5000/api";
 
-const REACT_APP_API_PRODUCTION = "https://ewinet-testimony-api.vercel.app/api";
+const REACT_APP_API_PRODUCTION = "https://ewnetegna-testimony-api.vercel.app/api";
 
 
 const api = axios.create({

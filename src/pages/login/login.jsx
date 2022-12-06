@@ -3,6 +3,7 @@ import { useContext, useRef } from "react";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Context } from '../../context/Context';
+import api from '../../config/api';
 
 
 export default function Login() {
@@ -14,7 +15,7 @@ export default function Login() {
         e.preventDefault();
         dispatch({ type: "LOGIN_START" });
         try {
-            const res = await axios.post("/auth/login", {
+            const res = await api.post("/auth/login", {
                 username: userRef.current.value,
                 password: passwordRef.current.value,
             });

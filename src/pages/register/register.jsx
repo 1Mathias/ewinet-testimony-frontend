@@ -3,6 +3,7 @@ import axios from 'axios';
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import api from '../../config/api';
 import './register.css'
 
 export default function Register() {
@@ -16,8 +17,9 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError(false);
+
         try {
-            const res = await axios.post("/auth/register", {
+            const res = await api.post("/auth/register", {
                 username,
                 email,
                 password,

@@ -19,64 +19,65 @@ export default function TopBar() {
     dispatch({ type: "LOGOUT" });
   };
   return (
-    <div className='HeaderAdded'>
-      <Navbar bg="light" expand='md' className="topbar">
-        <Container>
-          <Navbar.Brand href="/">
-            <img className="header_icon" src={image} alt="logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-md`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
-                <img className="header_icon" src={image} alt="logo" />
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link >
-                  <Link className="link" to="/">
-                    Home
-                  </Link>
-                </Nav.Link>
-                <NavDropdown title="Religion" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="/religion">Orthodox</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="/islam">
-                    Islam
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    Catholic
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    Jehovah
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    Only-Jesus
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    Adventist
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link>
-                  <Link className="link" to="/videos">
-                    Videos
-                  </Link>
-                </Nav.Link>
-                <Nav.Link><Link className="link" to="/write">
-                  Write
-                </Link></Nav.Link>
+    <div className='top'>
+      <div className='HeaderAdded'>
+        <Navbar bg="light" expand='md' className="topbar">
+          <Container>
+            <Navbar.Brand href="/">
+              <img className="header_icon" src={image} alt="logo" />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-md`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-md`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
+                  <img className="header_icon" src={image} alt="logo" />
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link >
+                    <Link className="link" to="/">
+                      Home
+                    </Link>
+                  </Nav.Link>
+                  <NavDropdown title="Religion" id="navbarScrollingDropdown">
+                    <NavDropdown.Item href="/religion">Orthodox</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/islam">
+                      Islam
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#">
+                      Catholic
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#">
+                      Jehovah
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#">
+                      Only-Jesus
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#">
+                      Adventist
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link>
+                    <Link className="link" to="/videos">
+                      Videos
+                    </Link>
+                  </Nav.Link>
+                  <Nav.Link><Link className="link" to="/write">
+                    Write
+                  </Link></Nav.Link>
 
-                <Nav.Link ><Link className="link" to="/contactus">Contact Us</Link></Nav.Link>
-                {/* <Nav.Link href="#action12" className="login-btn">
+                  <Nav.Link ><Link className="link" to="/contactus">Contact Us</Link></Nav.Link>
+                  {/* <Nav.Link href="#action12" className="login-btn">
                 <Link className="link" to="/login">
                   Login           |
                 </Link>
@@ -87,48 +88,49 @@ export default function TopBar() {
                 </Link>
               </li>
               </Nav.Link> */}
-                <div className="topRightab">
-                  {user ? (
+                  <div className="topRightab">
+                    {user ? (
 
 
 
-                    <NavDropdown title={<div className='dropdownprofile'><img className="topImg" src={user.profilePic} alt="" /></div>}>
-                      <NavDropdown.Item><Link to="/settings">Profile</Link></NavDropdown.Item>
+                      <NavDropdown title={<div className='dropdownprofile'><img className="topImg" src={user.profilePic} alt="" /></div>}>
+                        <NavDropdown.Item><Link to="/settings">Profile</Link></NavDropdown.Item>
 
-                      <NavDropdown.Item onClick={handleLogout}>Log Out</NavDropdown.Item>
+                        <NavDropdown.Item onClick={handleLogout}>Log Out</NavDropdown.Item>
 
-                    </NavDropdown>
+                      </NavDropdown>
 
-                  ) : (
-                    <ul className="topList mt-2">
-                      <li className="topListItem">
-                        <Link className="link " to="/login">
-                          Login
-                        </Link>
-                      </li>
-                      <li className="topListItem">
-                        <Link className="link" to="/register">
-                          Register
-                        </Link>
-                      </li>
-                    </ul>
-                  )}
+                    ) : (
+                      <ul className="topList mt-2">
+                        <li className="topListItem">
+                          <Link className="link " to="/login">
+                            Login
+                          </Link>
+                        </li>
+                        <li className="topListItem">
+                          <Link className="link" to="/register">
+                            Register
+                          </Link>
+                        </li>
+                      </ul>
+                    )}
 
-                </div>
-
-                <Nav.Link>
-                  <div class='search-box'>
-                    <input class="search-text" type="text" placeholder="Search Anything" />
-                    <a href="#" class="search-btn">
-                      <i class="fas fa-search"></i>
-                    </a>
                   </div>
-                </Nav.Link>
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar >
+
+                  <Nav.Link>
+                    <div class='search-box'>
+                      <input class="search-text" type="text" placeholder="Search Anything" />
+                      <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                      </a>
+                    </div>
+                  </Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar >
+      </div>
     </div>
   )
 }
