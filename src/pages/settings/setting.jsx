@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useState } from 'react'
 import SideBar from '../../components/sidebar/sideBar'
+import api from '../../config/api';
 import { Context } from '../../context/Context';
 import { errorNotification, successNotification } from '../../utils/notifications';
 import './setting.css'
@@ -39,7 +40,7 @@ export default function Setting() {
             }
         }
         try {
-            const res = await axios.put("/users/" + user._id, updatedUser);
+            const res = await api.put("/users/" + user._id, updatedUser);
             setSuccess(true);
             dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
             successNotification("Successfully Updated")
