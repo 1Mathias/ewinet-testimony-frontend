@@ -25,7 +25,7 @@ const responsive = {
     items: 1
   }
 };
-const PF = "http://localhost:5000/images/";
+const PF = "https://ewnetegna-testimony-api.vercel.app/images/";
 
 export default function videos() {
   return (
@@ -35,7 +35,7 @@ export default function videos() {
           <img className="headerImg" src="https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_960_720.jpg" alt="logo" />
         </div>
       </div>
-      <h1 className="text-center m-5 text-secondary">Testimonial Videos</h1>
+      <h1 className="m-5 text-center text-secondary">Testimonial Videos</h1>
       <Container>
         <h4 className="text-secondary">Orthodox</h4>
         <Carousel responsive={responsive} centerMode={true} swipeable={true} draggable={true} infinite={true} keyBoardControl={true} renderDotsOutside={true}>
