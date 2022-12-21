@@ -55,12 +55,12 @@ export default function Register() {
                     placeholder="Enter your password..."
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button className="registerButton" type="submit">
+                <button className="p-2 m-6 mt-5 text-white bg-blue-500 border-none cursor-pointer hover:bg-blue-300" type="submit">
                     Register
                 </button>
             </form>
-            <button className="registerLoginButton">
-                <Link className="link" to="/login">
+            <button className="absolute p-2 m-6 mt-5 text-white bg-blue-500 border-none cursor-pointer hover:bg-blue-300 top-14 right-5">
+                <Link className="text-white" to="/login">
                     Login
                 </Link>
             </button>

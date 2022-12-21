@@ -91,7 +91,7 @@ export default function Setting() {
                         type="password"
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                    <button className="settingsSubmit" type="submit">
+                    <button className="flex p-2 mx-auto mt-4 text-white bg-blue-400 border-none rounded-3xl hover:bg-blue-300" type="submit">
                         Update
                     </button>
                     {success && (

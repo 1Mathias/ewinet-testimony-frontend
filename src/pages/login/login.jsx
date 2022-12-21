@@ -1,5 +1,5 @@
 import './login.css'
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Context } from '../../context/Context';
@@ -10,6 +10,8 @@ export default function Login() {
     const userRef = useRef();
     const passwordRef = useRef();
     const { dispatch, isFetching } = useContext(Context);
+    const [error, setError] = useState(false);
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -43,15 +45,16 @@ export default function Login() {
                     placeholder="Enter your password..."
                     ref={passwordRef}
                 />
-                <button className="loginButton" type="submit" disabled={isFetching}>
+                <button className="p-2 m-6 mt-5 text-white bg-blue-500 border-none cursor-pointer hover:bg-blue-300" type="submit" disabled={isFetching}>
                     Login
                 </button>
             </form>
-            <button className="loginRegisterButton">
-                <Link className="link" to="/register">
+            <button className="absolute p-2 m-6 mt-5 text-white bg-blue-500 border-none cursor-pointer hover:bg-blue-300 top-14 right-5">
+                <Link className="text-white" to="/register">
                     Register
                 </Link>
             </button>
+            {error && <span style={{ color: "red", marginTop: "10px" }}>Something went wrong!</span>}
         </div>
     );
 }
