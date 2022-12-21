@@ -23,7 +23,7 @@ export default function Post({ post }) {
                     truncateText="…"
                     text={post.desc}
                 />
-                <Link to={`/post/${post._id}`} className="link"><Button variant="info mt-2 text-light">Read More</Button></Link>
+                <Link to={`/post/${post._id}`} className=""><button className="flex p-2 mx-auto mt-4 text-white bg-blue-400 border-none rounded-3xl hover:bg-blue-300" >Read More</button></Link>
             </Card.Body>
         </Card>
     )

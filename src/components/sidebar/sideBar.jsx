@@ -23,10 +23,10 @@ export default function SideBar() {
     return (
         <div className="sidebar">
             <div className='sidebarItem'>
-                <span className='sidebarTitle'>ABOUT US</span>
+                <span className='sidebarTitle'>About Ewunetegna</span>
                 <img src={image} alt='' />
                 <p>
-                    Ewnetegna Testimony is a web application that serves as a factual source of truth to "curious" people as they encounter different doubts and insecurities.
+                    Ewunetegna Testimony is a web application that serves as a factual source of truth to "curious" people as they encounter different doubts and insecurities about Jesus.
                 </p>
             </div>
             <div className='sidebarItem'>
